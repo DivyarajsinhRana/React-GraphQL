@@ -1,9 +1,12 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Users from './pages/Userlist';
 
 function App() {
   return (
-    <Users/>
+    <Routes>
+      <Route path='' element={<Users/>} />
+    </Routes>
   );
 }
 
